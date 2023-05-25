@@ -47,7 +47,7 @@ namespace CrawlerConsultaExtracao
         //CONSULTA DE FERIADOS
             wait_ie.Until(ExpectedConditions.VisibilityOfAllElementsLocatedBy((By.Id("Pagina"))));   //ESPERA CARREGAR O id Pagina
             IWebElement dataInicial = ie.FindElement(By.Name("data"));                              //SELECIONA O CAMPO PARA DIGITAR A DATA
-            string dataAtual = DateTime.Now.ToString("ddMMyyyy");                                  //CRIA STRING COM A DATA ATUAL FORMATO ddMMyyy
+            string dataAtual = DateTime.Now.ToString("ddMMyyyy");                                  //CRIA STRING COM A DATA ATUAL FORMATO ddMMyyyy
             string dataFutura = DateTime.Today.AddDays(10).ToString("ddMMyyyy");
 
         //IWebElement esperarTrocaDeCampo = waitpage.Until(e => e.FindElement(By.Name("Agencia"))); WAIT DE TROCA DE CAMPO CASO NECESSÁRIO
